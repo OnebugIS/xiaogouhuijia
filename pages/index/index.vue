@@ -46,7 +46,7 @@
 						<image class="avatar" :src="avatar"></image>
 					</view>
 					<text class="nickname">当前定位：{{ positonType }}</text>
-					<image class="dotted" src="/static/dotted.png"></image>
+					<!-- <image class="dotted" src="/static/dotted.png"></image> -->
 				</view>
 				<view class="right">
 					<image class="refresh" src="/static/refresh.png"></image>
@@ -104,7 +104,7 @@
 				devAddress: null,
 				isRoute: false,
 				avatar: '../../static/moren.jpg',
-				deviceid:"14079705918",
+				deviceid:"14079706890",
 				orgid: "openluat",
 				meter: null,
 				showMode:false,
@@ -400,13 +400,14 @@
 							this.longitude = lng;
 							this.meter = meter ? parseInt(meter) : null
 							this.positonType = ['gps', 'wifi', 'bts', '建栋'][type -1]
-							const timeDiff = (new Date().getTime() - new Date(time).getTime()) / 1000;
-							const timeDiffMinutes = Math.floor(timeDiff / 60);
-							if (timeDiffMinutes >= 59) {
-								this.diffMinutes =  Math.floor(timeDiffMinutes / 60) + '小时前'
-							} else {
-								this.diffMinutes =   timeDiffMinutes + '分钟前'
-							}
+							// const timeDiff = (new Date().getTime() - new Date(time).getTime()) / 1000;
+							// const timeDiffMinutes = Math.floor(timeDiff / 60);
+							// if (timeDiffMinutes >= 59) {
+							// 	this.diffMinutes =  Math.floor(timeDiffMinutes / 60) + '小时前'
+							// } else {
+							// 	this.diffMinutes =   timeDiffMinutes + '分钟前'
+							// }
+							this.diffMinutes = time
 
 							this.drawLine();
 						} else {
