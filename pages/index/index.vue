@@ -399,7 +399,7 @@
 							this.latitude = lat;
 							this.longitude = lng;
 							this.meter = meter ? parseInt(meter) : null
-							this.positonType = ['gps', 'wifi', 'bts', '建栋'][type -1]
+							this.positonType = ['gps', 'wifi', 'lbs', '建栋'][type -1]
 							// const timeDiff = (new Date().getTime() - new Date(time).getTime()) / 1000;
 							// const timeDiffMinutes = Math.floor(timeDiff / 60);
 							// if (timeDiffMinutes >= 59) {
