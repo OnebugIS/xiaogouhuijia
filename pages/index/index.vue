@@ -15,10 +15,10 @@
 			<cover-image src="/static/ding_right.png" class="d_r fedeIn" @click="handCover"></cover-image>
 
 			<cover-view @click="modeDeviceid" style="right: 10px;
-	bottom: calc(300px + env(safe-area-inset-bottom));position: absolute; width: 150px;height: 40px; background-color: #FF8C27;border-radius: 10px; text-align: center;line-height: 40px;color: #fff;">点我切换设备ID</cover-view>
-
+	bottom: calc(240px + env(safe-area-inset-bottom));position: absolute; width: 150px;height: 40px; background-color: #FF8C27;border-radius: 10px; text-align: center;line-height: 40px;color: #fff;">点我切换设备ID</cover-view>
+<!-- 
 			<cover-view @click="modeSwitch" style="right: 10px;
-	bottom: calc(240px + env(safe-area-inset-bottom));position: absolute; width: 150px;height: 40px; background-color: #FF8C27;border-radius: 10px;color: #fff;text-align: center;line-height: 40px;">点我切换模式</cover-view>
+	bottom: calc(240px + env(safe-area-inset-bottom));position: absolute; width: 150px;height: 40px; background-color: #FF8C27;border-radius: 10px;color: #fff;text-align: center;line-height: 40px;">点我切换模式</cover-view> -->
 
 			<cover-view class="mode_box">
 				<cover-view v-if="showMode" class="mode-style" :class="{'hover' : index == idx}" v-for="(item,index) in modeData" :key="index" @click="handMode(index)">
@@ -97,8 +97,8 @@
 				wsUrl: 'wss://www.d3inf.com',
 				heartbeatInterval: null,
 				heartbeatIntervalms: 30000,
-				token: 'BjbzLHhhukAfCvN74ZEqp1CMHEaxtgi9chMz9zBjxcjfTmUEyJkJpuop8SBSATC4YMhw3jSMPu4xkbVRsXxN5BXQraL6C817aeqGfe29JCWjx1pNhPi3dc2yraHnd4dMk5DZhvYiz5hHi5MAq4WsQ3ay9xdHPRvF5v1Ybzavhuz3Z2ttPjdLZXQpXAzhxx9Y38BsC2WzRtgdZKfRmjvLerNmKJBqaB5E9Bwhp1GT4KAbZFw3pgFsF8pdpQ47dGPTQCCqPHBfdgExKrzRzyuMQfhDqXhw3iD4EoNLMQ1kmuJWcK3adEXdM6jqj9k8qLk8mPRdi4DMEuhZQcpqPkkv5NeBoRTf4VMD87N9RFBaEZGgVKh7EgBcmkGFzmaxCBpijcELv7mdByoZQMAuVsgXzSn7PHf9QrYqFSBei3SLhsoGE1LBBjuFy', 
-				salt: '556cebc06941488096f8edace3c0b677',
+				token: 'UxYEyKNVCV29nmxGWtJ6bGseEbvvVLL98SpsKE8RhQKksh2jN9TwkZR6zY7X7h4YviCqBxNn3V2zF2E22PckYohyf5gnCZTQry1xuJb98GZAxims4gN9jdTNZaYfM1YypHVTxSwGiA4AaJ8eah81tXV4irhLfP54dGMgYTzZQVFDD52JLP8VJoVBf5G2mBpLFmfH1U4VKyHQSzhopJA6z4Ejzktjsq7JZYsLRZsWhv4knk59fU5D44Uw1isionfyZ51XLyX24SRJuDrnwjUHpDYUJ8cBe9Rg3RyG9BkFJScGDQWNaRVSCzejNYrJqVgTpeyxaaPxsF2hgfWQxMDv1vDrwT6kyt7LuWNX5hKn4C4XDiHxxCeCmMPzcMpmAbnN4kabtTQec9AoRCFdtej1jADeYdHfaLbfqJ5GfTsUPsmbqkdaFfdMN', 
+				salt: '25cf8bf0deb246ab916d6556336950fa',
 				tu: 1, 
 				socketStatus: false,
 				devAddress: null,
